@@ -3,6 +3,10 @@ body {
   font-family: "Karla", sans-serif;
 }
 
+.flex-custom{
+  display: flex;
+  flex-direction: row;
+}
 .intro-section {
   background-image: url('../img1.jpg');
   background-size: cover;
@@ -10,6 +14,7 @@ body {
   background-position: center;
   padding: 75px 95px;
   min-height: 100vh;
+  max-width: 100vw;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -17,15 +22,12 @@ body {
   flex-direction: column;
   /* color: #ffffff; */
 }
-
-@media (max-width: 991px) {
-  .intro-section {
-    padding-left: 50px;
-    padding-right: 50px;
+@media screen and (max-width: 720px) {
+  .flex-custom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-}
-
-@media (max-width: 767px) {
   .intro-section {
     padding: 28px;
   }
@@ -34,15 +36,6 @@ body {
   }
   .form-section {
     padding: 35px;
-  }
-}
-
-@media (max-width: 575px) {
-  .intro-section {
-    min-height: auto;
-  }
-  .login-wrapper {
-    width: 100%;
   }
 }
 
@@ -88,6 +81,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  max-width: 100vw;
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
@@ -159,6 +153,7 @@ body {
 }
 
 .login-wrapper-footer-text {
+  margin-top: 10px;
   font-size: 14px;
   text-align: center;
 }
