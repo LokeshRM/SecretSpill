@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "authentication based node application",
   "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
   "author": "Lokesh Reddy Meda",
   "license": "MIT",
   "dependencies": {
